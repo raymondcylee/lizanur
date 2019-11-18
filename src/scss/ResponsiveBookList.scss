@@ -1,0 +1,150 @@
+$accent: rgb(100, 149, 237);
+$secondary-accent: rgb(25, 25, 112);
+$opaque-accent: rgba(100, 148, 237, 0.103);
+$word: #392313;
+$button-primary-color: #fcbcbc;
+$button-primary-word: rgb(213, 66, 107);
+// $button-primary-color: #9BD3CB;
+// $button-primary-word: rgb(0, 139, 115);
+
+@media only screen and (max-width: 649px) {
+  .titleContainer .img {
+    height: 200px;
+  }
+
+  .myDescription {
+    max-width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  #main {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  #elaborate {
+    font-size: 12px;
+    max-width: 120px;
+    margin: 0;
+    &::before {
+      content: open-quote;
+      font-size: 10px;
+    }
+    &::after {
+      content: close-quote;
+      font-size: 10px;
+    }
+  }
+  .aboutMeBtn {
+    cursor: pointer;
+    position: relative;
+    padding: 4px 10px;
+    background: white;
+    font-size: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    &:after,
+    &:before {
+      content: " ";
+      width: 3px;
+      height: 3px;
+      position: absolute;
+      border: 0px solid #fff;
+      transition: all 0.4s;
+    }
+    &:after {
+      top: -1px;
+      left: -1px;
+      border-top: 2px solid $secondary-accent;
+      border-left: 2px solid $secondary-accent;
+    }
+    &:before {
+      bottom: -1px;
+      right: -1px;
+      border-bottom: 2px solid $secondary-accent;
+      border-right: 2px solid $secondary-accent;
+    }
+    &:hover {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:before,
+      &:after {
+        width: 105%;
+        height: 110%;
+      }
+    }
+  }
+
+  .myDescription .descriptionIcons {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0;
+    }
+  }
+
+  .d-eachIcon {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+  }
+
+  #d-fb:hover {
+    cursor: pointer;
+    color: #4267b2;
+    transition: 0.2s;
+  }
+
+  #d-insta {
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      color: #991292;
+    }
+  }
+
+  #d-li:hover {
+    cursor: pointer;
+    color: #2867b2;
+    transition: 0.2s;
+  }
+
+  .sortingButton {
+    margin: 0px;
+  }
+
+  .bookBox {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+
+  .eachBook {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  #main {
+    font-size: 40px;
+  }
+  #elaborate {
+    max-width: 300px;
+    font-size: 22px;
+  }
+
+  .descriptionIcons {
+    display: none;
+  }
+}

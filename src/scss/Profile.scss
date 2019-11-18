@@ -1,0 +1,178 @@
+$accent: rgb(100, 149, 237);
+$secondary-accent: rgb(25, 25, 112);
+$word: #392313;
+
+
+body {
+  height: 100vh;
+}
+
+.titleBox {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  top: 20%;
+  left: 10%;
+
+  #bigName {
+    font-family: "Damion", cursive;
+    text-align: center;
+    font-size: 120px;
+    z-index: 1;
+  }
+
+  .btnContainer {
+    text-align: center;
+
+    .btn {
+      z-index: 1;
+      margin: 20px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      padding: 6px 16px;
+      background: white;
+      font-size: 20px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      transition: all 1s;
+      &:after,
+      &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 0.4s;
+      }
+      &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 2px solid $secondary-accent;
+        border-left: 2px solid $secondary-accent;
+      }
+      &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 2px solid $secondary-accent;
+        border-right: 2px solid $secondary-accent;
+      }
+      &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        &:before,
+        &:after {
+          width: 105%;
+          height: 110%;
+        }
+      }
+    }
+  }
+  .p-descriptionIcons {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    a {
+      margin: 0;
+    }
+  }
+
+  .p-eachIcon {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: black;
+  }
+
+  #p-fb:hover {
+    cursor: pointer;
+    color: #4267b2;
+    transition: 0.2s;
+  }
+
+  #p-insta {
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      color: #991292;
+    }
+  }
+
+  #p-li:hover {
+    cursor: pointer;
+    color: #2867b2;
+    transition: 0.2s;
+  }
+}
+
+.img2 {
+  background-position: 40% 18%;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../static/ProfilePicture2.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height:70vh;
+
+  .img3 {
+    min-width: 30vw;
+    max-width: 100vw;
+  }
+  .img3 img {
+    
+    height: 70vh;
+    position: relative;
+    object-fit: cover;
+    background-position: 50% 80%;
+    padding: 20px;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+  }
+  .profileDetail {
+    display: flex;
+    min-width: 50%;
+    margin: auto 25px auto 25px;
+    flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+
+    p {
+      margin: 20px;
+
+      #name {
+        font-family: "Damion", cursive;
+        font-size: 50px;
+        color: $secondary-accent;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+button {
+  z-index: 1;
+}
+
+.fadein-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fadein-appear.fadein-appear-active {
+  opacity: 0.5;
+  transition: opacity 1s linear;
+}

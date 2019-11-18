@@ -1,0 +1,55 @@
+@media only screen and (max-width: 425px) {
+  .profile .profileDetail {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .titleBox {
+    top: 10%;
+
+    #bigName {
+      font-size: 60px;
+    }
+    .btnContainer {
+      .btn {
+        font-size: 15px;
+      }
+    }
+  }
+  .img2 {
+    width: 85%;
+    position: relative;
+    background-size: cover;
+  }
+
+  .profile {
+    flex-direction: column;
+    position: relative;
+    display: block;
+    height: 100%;
+
+    .img3 img {
+      min-width: 100vw;
+      min-height: 90vh;
+      background-size: cover;
+      // background-position: 50% 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .titleBox {
+    top: 30%;
+    height: 200px;
+
+    #bigName {
+      font-size: 100px;
+    }
+    .btnContainer {
+      .btn {
+        font-size: 20px;
+      }
+    }
+  }
+}

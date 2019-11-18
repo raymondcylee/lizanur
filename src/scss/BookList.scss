@@ -1,0 +1,241 @@
+$accent: rgb(100, 149, 237);
+$secondary-accent: rgb(25, 25, 112);
+$opaque-accent: rgba(100, 148, 237, 0.2);
+$word: #392313;
+
+.titleContainer {
+  position: relative;
+  text-align: center;
+}
+
+.titleContainer .img {
+  position: relative;
+  background-position: 0% 15%;
+  width: 85%;
+  height: 400px;
+  background-image: url("../static/ProfilePicture.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  margin: auto;
+}
+
+.titleContainer a {
+  margin: 10px;
+}
+
+.myDescription {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+
+}
+
+#main {
+  font-family: "Marck Script", cursive;
+  font-weight: bolder;
+  font-size: 45px;
+  color: $word;
+}
+
+#elaborate {
+  font-family: "Marck Script", cursive;
+  font-size: 25px;
+  max-width: 400px;
+  color: $word;
+  &::before {
+    content: open-quote;
+    font-size: 35px;
+  }
+  &::after {
+    content: close-quote;
+    font-size: 35px;
+  }
+}
+.aboutMeContainerBtn a {
+  color: inherit;
+  text-decoration: none;
+}
+.aboutMeBtn {
+  cursor: pointer;
+  position: relative;
+  padding: 6px 16px;
+  background: white;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.4s;
+  }
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid $secondary-accent;
+    border-left: 2px solid $secondary-accent;
+  }
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid $secondary-accent;
+    border-right: 2px solid $secondary-accent;
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+      width: 105%;
+      height: 110%;
+    }
+  }
+}
+
+.sortingButton {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buyBtn {
+  margin: 10px;
+}
+
+.bookBox {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.eachBook {
+  margin: 20px 20px 20px 20px;
+  height: 400px;
+  width: 300px;
+  transition: all 0.4s;
+}
+
+.title {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100px;
+  max-width: 250px;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.bookName {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.eachBook:hover {
+  box-shadow: 0 0 10px rgba(88, 88, 88, 0.3);
+  transition: box-shadow 0.4s;
+}
+
+.imageContainer {
+  margin: 10px auto 10px auto;
+  display: block;
+  max-width: 180px;
+  min-width: 180px;
+  max-height: 250px;
+  min-height: 250px;
+  background-color: transparent;
+  perspective: 1000px;
+}
+.bookImage-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.imageContainer:hover .bookImage-inner {
+  transform: rotateY(180deg);
+}
+
+.bookImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.bookImage-back {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  backface-visibility: hidden;
+  background-color: $opaque-accent;
+  transform: rotateY(180deg);
+  max-width: 180px;
+  min-width: 180px;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.bookImage {
+  display: block;
+  max-width: 180px;
+  min-width: 180px;
+  max-height: 250px;
+  min-height: 250px;
+}
+.imageContainer .bookImage-inner .bookImage img {
+  max-width: 180px;
+  min-width: 180px;
+  max-height: 250px;
+  min-height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.starsOuter {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.starsOuter::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.starsInner {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.starsInner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: yellow;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1s linear;
+}

@@ -1,0 +1,82 @@
+$accent: rgb(100, 149, 237);
+$secondary-accent: rgb(25, 25, 112);
+$opaque-accent: rgba(100, 148, 237, 0.103);
+$word: #4b2d18;
+
+.navbar {
+  padding: 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  margin-bottom: 10px;
+}
+.navbar a.navbar-brand {
+  color: $secondary-accent;
+  padding: 0;
+  margin: auto;
+  font-family: "Damion", cursive;
+  font-size: 50px;
+  transition: all 0.3s;
+}
+.navbar a.navbar-brand:hover {
+  color: $accent;
+  transition: 0.3s;
+}
+
+a.navLink.nav-link {
+  font-size: 20px;
+  color: $accent;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icons {
+  position: absolute;
+  right: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.eachIcon {
+  margin: 10px;
+  font-size: 25px;
+  transition: all 0.2s;
+  color: black;
+}
+
+#fb:hover {
+  cursor: pointer;
+  color: #4267b2;
+  transition: 0.2s;
+
+}
+
+#insta {
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #991292;
+  }
+}
+
+#li:hover {
+  cursor: pointer;
+  color: #2867b2;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar a.navbar-brand {
+    font-size: 30px;
+    margin: auto;
+  }
+  .icons {
+    display: none;
+  }
+}
