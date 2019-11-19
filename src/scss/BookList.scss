@@ -214,6 +214,7 @@ $word: #392313;
 
 .starsOuter::before {
   content: "\f006 \f006 \f006 \f006 \f006";
+  font-family: FontAwesome;
 }
 
 .starsInner {
@@ -223,11 +224,13 @@ $word: #392313;
   left: 0;
   white-space: nowrap;
   overflow: hidden;
+  font-family: FontAwesome;
 }
 
 .starsInner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: yellow;
+  font-family: FontAwesome;
 }
 
 .fade-appear {
