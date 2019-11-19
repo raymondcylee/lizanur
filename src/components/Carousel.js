@@ -20,6 +20,13 @@ const items = [
     header: '',
     key: '3'
   },
+  {
+    src: require('../static/ProfilePicture6.jpg'),
+    altText: 'Slide 4',
+    caption: '',
+    header: '',
+    key: '4'
+  },
 ];
 
 export default items;
