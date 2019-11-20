@@ -1,5 +1,4 @@
 import React from 'react';
-// import LoadingIndicator from './LoadingIndicator.js'
 import '../scss/BookList.scss'
 import '../scss/ResponsiveBookList.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -3,6 +3,10 @@ $secondary-accent: rgb(25, 25, 112);
 $opaque-accent: rgba(100, 148, 237, 0.2);
 $word: #392313;
 
+body {
+  font-family: 'Marmelad', sans-serif;
+  }
+
 .titleContainer {
   position: relative;
   text-align: center;
