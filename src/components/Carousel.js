@@ -27,6 +27,13 @@ const items = [
     header: '',
     key: '4'
   },
+  {
+    src: require('../static/ProfilePicture7.jpg'),
+    altText: 'Slide 5',
+    caption: '',
+    header: '',
+    key: '5'
+  },
 ];
 
 export default items;

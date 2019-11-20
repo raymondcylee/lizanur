@@ -32,8 +32,8 @@
     .img3 img {
       min-width: 100vw;
       min-height: 90vh;
-      background-size: cover;
-      // background-position: 50% 50%;
+      object-fit: cover;
+      object-position: 50% 30%;
     }
   }
 }
