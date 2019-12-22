@@ -328,5 +328,21 @@ const BookInfo = [
 
     },
 
+    {
+        "id": 22,
+        "name": "Anggun Mikayla",
+        "year": 2019,
+        "rating": null,
+        "rating_count": null,
+        "isbn": "978-967-86-0945-6",
+        "cover": require("./cover/22) Anggun Mikayla.jpg"),
+        "publisher": "Alaf 21, Grup Buku Karangkraf",
+        "page": 448,
+        "description": "Dia Mikayla, gadis anggun yang bukan tipikal untuk kau jumpa hari-hari. Aneh! Biarpun kepalanya dilempar batu, telinganya dihentam kata cacian dan tubuhnya disiat luka, dia masih mampu tersenyum buat dunia. Kewujudannya dinafi. Namun, Mikayla tidak ampuh membenci mereka yang membencinya. \n“Tak kira apa kau buat, kau masih hodoh kat mata aku. Kulit putih kau. Rambut merah kau. Mata biru kau. Semuanya jelik!” - Kadir. \nPertemuan Mikayla dengan Idriz dalam insiden yang tidak dijangka mencipta satu hubungan pelik. Siapa sangka hati Idriz mampu tergolek-golek pada wanita yang ditemuinya dalam versi puntianak itu? \n“Kau jumpa hantu, kau laung azan. Kau jumpa perempuan cantik pun, kau laung azan jugak?” – Mikayla. \n“Orang cakap, kalau lelaki dan perempuan bukan mahram duduk berdua-duaan macam ni, syaitan akan jadi makhluk ketiga. Itu yang aku azan.” – Idriz. \nAsif yang suka mengusik pula mulai sedar yang usikannya sudah mencambahkan rasa sayang. Namun, kemunculan lelaki dari masa silam Mikayla, Aidan yang menagih kemaafannya membuatkan Asif dan Idriz disampuk cemburu. \n“… Memang aku dah banyak kali jadi hero dalam drama, dah banyak kali couple dengan macam-macam spesies heroin. Tapi, dalam dunia sebenar ni, hanya kau seorang heroin aku.” - Aidan \nKeanggunan Mikayla menggetarkan tiga jiwa. Namun, obsesinya masih satu, mendapatkan secebis kasih daripada  insan yang enggan mengakui kewujudannya.",
+        "genre": ["Keluarga", "Cinta"],
+        "source": "https://www.karangkrafmall.com/anggun-mikayla"
+
+    },
+
 ]
 export default BookInfo
