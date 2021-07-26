@@ -332,8 +332,8 @@ const BookInfo = [
         "id": 22,
         "name": "Anggun Mikayla",
         "year": 2019,
-        "rating": null,
-        "rating_count": null,
+        "rating": 4.67,
+        "rating_count": 6,
         "isbn": "978-967-86-0945-6",
         "cover": require("./cover/22) Anggun Mikayla.jpg"),
         "publisher": "Alaf 21, Grup Buku Karangkraf",
@@ -344,5 +344,36 @@ const BookInfo = [
 
     },
 
+    {
+        "id": 23,
+        "name": "Teja di Hati",
+        "year": 2020,
+        "rating": null,
+        "rating_count": null,
+        "isbn": "978-967-86-0974-6",
+        "cover": require("./cover/23) Teja di Hati.jpg"),
+        "publisher": "Alaf 21, Grup Buku Karangkraf",
+        "page": null,
+        "description": "Kahwin. Ia topik yang ralat bagi Teja. Apatah lagi menikahi bekas kawan karib yang pernah menyakiti hatinya suatu ketika dulu. Aneh, majlis pernikahannya berlangsung lancar meskipun perjalanan hidup mereka selepas itu berbonjol-bonjol bagaikan jalan yang tidak diturap. “Aku akan melekat dengan kau macam pacat kalau kau tak nak lepaskan aku sekarang. Aku akan pastikan hidup kau susah. Aku akan pastikan kau takkan bahagia dengan Aqila.” - Teja. “Please do that.”- Luq. Tanggungjawab berat tergalas di bahu Luq selepas petah melafazkan akad untuk menjadikan Teja yang halal buatnya. Namun, nawaitu asalnya sendiri serong, mahu melarikan diri dari bekas teman wanitanya, Aqila. Saat keikhlasannya diragui, Luq terus-menerus cuba mempertahankan rumahtangganya biarpun Tuah mahu menuntut Tejanya. “Awak tau, Teja? Awak perempuan pertama yang saya suka sejak kali pertama saya pandang.” - Tuah. Mampukah lelaki pra-matang seperti Luq menjadi pelindung yang diperlukan Teja apabila musibah datang melanda? Atau mungkinkah dia akan berlalu pergi, mengulangi kesilapan silamnya? “Mungkin aku bukan laksamana terbilang, bukan sultan atas takhta. Tapi, Teja yang satu ini, aku punya. Jangan sesiapa pandai-pandai nak claim ownership.”– Luq.",
+        "genre": ["Keluarga", "Cinta"],
+        "source": "https://www.karangkrafmall.com/teja-di-hati"
+
+    },
+
+    {
+        "id": 24,
+        "name": "Dalam Rintis Hujan",
+        "year": 2021,
+        "rating": null,
+        "rating_count": null,
+        "isbn": "978-967-469-183-7",
+        "cover": require("./cover/24) Dalam Rintis Hujan.jpg"),
+        "publisher": "Karya Seni",
+        "page": null,
+        "description": "Dalam rintis hujan, Mirza setia menanti wanita yang berjanji untuk memayungi dirinya dengan kasih sayang. Namun, hampa belaka. “…Mak dah janji nak ambik Mir! Mana mak Mir?”. Saat dia dipertemukan semula dengan wanita kesayangannya, dia digesa memilih antara ‘emak’ dan ‘mama’. Namun, Mirza nekad tidak mahu melepaskan kedua-duanya. Dalam ribut permasalahan keluarga yang belum tenang, cinta si hawa yang seorang ini pula datang bertandang. Terketar hatinya. “Jiwa klasik? Apa maksudnya tu?” “Kalau saya suka seorang perempuan tu, saya tak ajak keluar. Saya beli pisang suruh dia buat cekodok.” Mirza terus dibuai rasa tanpa menyedari ada jiwa lain yang sebenarnya terluka. “Lepas Mel belajar lepaskan abang, baru Mel tahu hargai diri Mel sendiri, bang.” Ah, kacau! Dia dipaksa memilih lagi dan kali ini di antara dua wanita dalam persalinan pengantin di depannya. “Sekarang saya dah sedia jadi isteri awak. Saya sanggup korbankan semuanya demi awak.”-Ana Sofiya. “Abang tahu hadith ‘payung emas’ untuk wanita bermadu tu hadith palsu, kan?” – Melissa. Dan tika hatinya memilih, dia nekad untuk menyintai dan setia sehingga ke titik noktah hidupnya.",
+        "genre": ["Keluarga", "Cinta"],
+        "source": "https://shopee.com.my/product/257079836/10318245899?fbclid=IwAR1eRBPufedLeyC5QmhW06i64u0fhBqc2hEwMPPoAcZegN88ruC-xajb1rU&__hybrid_pc__=1&stm_referrer="
+
+    },
 ]
 export default BookInfo
